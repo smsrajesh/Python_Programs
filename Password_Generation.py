@@ -12,5 +12,29 @@ symbols=['@','#','$','&','*']
 
 password_list=[]
 
+n_letters=int(input("Enter how many letters do you want : "))
+n_numbers=int(input("Enter how many numbers do you want : "))
+n_symbols=int(input("Enter how many symbols do you want : "))
+
+for i in range(n_letters):
+    password_list.append(random.choice(letters))
+
+for i in range(n_numbers):
+    password_list.append(random.choice(numbers))
+
+for i in range(n_symbols):
+    password_list.append(random.choice(symbols))
+
+print(password_list)
+
+password=""
+
+random.shuffle(password_list)
+
+for i in password_list:
+    password+=i
+
+print(password)
+
 
 

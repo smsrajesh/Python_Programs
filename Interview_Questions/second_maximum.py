@@ -1,4 +1,6 @@
-
+"""
+Find the Second height salary in the list.
+"""
 num_list=list()
 num=int(input("Enter how many values you want in a list : "))
 for i in range(num):

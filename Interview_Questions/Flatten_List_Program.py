@@ -17,3 +17,21 @@ result = Single_list(val)
 print(result)
 
 
+# def Single_list_1(n):
+#     output=[]
+#     for i in n:
+#         print(f"{i} and its type is {type(i)}")
+#         if type(i) is list:
+#             output.extend(Single_list_1(i))
+#         if type(i) is int:
+#             output.append(i)
+#         else:
+#             pass
+#     return output
+
+# result = Single_list_1(val)
+# print(result)
+
+    
+
+

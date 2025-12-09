@@ -46,19 +46,37 @@ val = [10, 20, 30, [40, 50, [60, 70, [80, [90]]]]]
 # print(result)
 
 
-output=[]
-def Single_list_1(n):
+print("output as local variable : ")
+def Single_list_1(n,output=None): 
+    if output is None:      
+        output=[]
     for i in n:
         if type(i) is list:
             # print(type(i),i)
-            Single_list_1(i)
-        elif type(i) is int:
+            Single_list_1(i,output)
+        elif type(i) is int:   
             # print(type(i),i)
             output.append(i)
     return output
 
 result = Single_list_1(val)
 print(result)
+
+
+# print("Output as global variable : ")
+# output=[]
+# def Single_list_1(n): 
+#     for i in n:
+#         if type(i) is list:
+#             # print(type(i),i)
+#             Single_list_1(i)
+#         elif type(i) is int:   
+#             # print(type(i),i)
+#             output.append(i)
+#     return output
+
+# result = Single_list_1(val)
+# print(result)
 
     
 

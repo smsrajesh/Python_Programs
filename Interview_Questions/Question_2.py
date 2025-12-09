@@ -1,5 +1,4 @@
 
-
 '''
     input=abbcccdddd
     output=abcd

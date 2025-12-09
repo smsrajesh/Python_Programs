@@ -52,11 +52,9 @@ def Single_list_1(n):
         if type(i) is list:
             # print(type(i),i)
             Single_list_1(i)
-        if type(i) is int:
+        elif type(i) is int:
             # print(type(i),i)
             output.append(i)
-        else:
-            pass
     return output
 
 result = Single_list_1(val)

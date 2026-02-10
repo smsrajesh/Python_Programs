@@ -77,7 +77,7 @@ def flatten(n,res=None):
         if type(i)==list:
             flatten(i,res)
         else:
-            res.append(i)
+            res.append(i) 
     return res
 
 print(flatten(l1))

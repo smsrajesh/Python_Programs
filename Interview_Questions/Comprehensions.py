@@ -8,14 +8,14 @@
 
 # Q1.Create a list of squares of numbers from 1 to 10 using list comprehension.
 
-# squares_list=[ i**2 for i in range(1,11)]
-# print(squares_list)
+squares_list=[ i**2 for i in range(1,11)]
+print(squares_list)
 
 
 # Q2.Create a list of even numbers from 1 to 20 using list comprehension.
 
-# even_num_list=[i for i in range(1,21) if i %2==0]
-# print(even_num_list)
+even_num_list=[i for i in range(1,21) if i %2==0]
+print(even_num_list)
 
 
 

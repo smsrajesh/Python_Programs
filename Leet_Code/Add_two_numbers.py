@@ -38,4 +38,10 @@ print(twoSum(nums,target))
 # It will work exactly the same.
 
 # Type hints are just for clarity and professional coding style.
+
+
+# Why do we use type hints?
+# "Type hints improve readability, help static analysis tools catch errors early,
+#  and make large codebases easier to maintain. 
+# They don't enforce types at runtime but improve code quality."
         

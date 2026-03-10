@@ -37,3 +37,56 @@ class Solution:
             x //= 10
         
         return x == reversed_half or x == reversed_half // 10
+
+
+# Solution - 1 : it stores as list.
+
+s=input("Enter a string: ")
+
+k=[i.lower() for i in s if i.isalnum()]
+
+if k==k[::-1]:
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+
+
+#  Solution - 2 : it stores as String.
+
+s=input("Enter a string: ")
+
+k="".join(i.lower() for i in s if i.isalnum())
+
+if k==k[::-1]:
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+
+
+
+# Optimized way to find the given strig is palindrome or not.
+
+s = input("Enter a string: ")
+
+i = 0
+j = len(s) - 1
+
+while i < j:
+
+    if not s[i].isalnum():
+        i += 1
+        continue
+
+    if not s[j].isalnum():
+        j -= 1
+        continue
+
+    if s[i].lower() != s[j].lower():
+        print("Not a Palindrome")
+        break
+
+    i += 1
+    j -= 1
+
+else:
+    print("Palindrome")

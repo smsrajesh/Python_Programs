@@ -1,0 +1,23 @@
+Navigation Commands : 
+
+Command	                                            Description	
+pwd	                                                Present Working Directory
+ls	                                                List files	
+ls -l	                                            Long listing	
+ls -a	                                            Show hidden files	
+cd folder	                                        Change directory
+cd ..	                                            Go back one folder
+cd ~	                                            Home directory	
+clear	                                            Clear terminal	
+mkdir folder                                        Creates a new folder
+touch file.extension                                Creates a new file (Works in linux)
+
+New-Item file.extension -ItemType File              Creates a new file (Works in PowerShell)
+ni file.extension -ItemType File
+
+echo $null > file.extension                         Creates a new file (Works in PowerShell)
+'' > file.extension
+
+code file.extension                                 Creates a new file (Works in PowerShell)
+
+

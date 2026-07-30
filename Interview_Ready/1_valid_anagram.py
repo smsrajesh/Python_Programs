@@ -73,11 +73,37 @@ print(valid_anagram(input1,input2))
 
 # i1 = ""
 # i2 = ""
-# def valid_anagram(s,t):
+# def valid_anagram_2(s,t):
 
 #     if len(s)!=len(t):
 #         return False
 
 #     return sorted(s)==sorted(t)
 
-# print(valid_anagram(i1,i2))
+# print(valid_anagram_2(i1,i2))
+
+
+
+def valid_anagram_2(s, t):
+
+    if len(s) != len(t):
+        return False
+
+    freq = {}
+
+    for ch in s:
+        freq[ch] = freq.get(ch, 0) + 1
+
+    for ch in t:
+        if ch not in freq:
+            return False
+
+        freq[ch] -= 1
+
+        if freq[ch] == 0:
+            del freq[ch]
+
+    return len(freq) == 0
+
+
+print(valid_anagram_2("1smsr", "rsms1"))

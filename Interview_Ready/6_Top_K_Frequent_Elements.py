@@ -18,12 +18,20 @@ def Top_K_Frequent_Elements(nums,k):
     sorted_list=sorted(freq.items(), key=lambda x:x[1], reverse=True)
     
     print(sorted_list)
+
+
+    # Solution - 1 :
     
     for num, count in sorted_list:
         if k == 0:
             break
         result.append(num)
         k -= 1
+
+    # Solution - 2 :
+
+    # for num, count in sorted_list[:k]:
+    #     result.append(num)
 
     return result
     
